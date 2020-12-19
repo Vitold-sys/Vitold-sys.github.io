@@ -15,12 +15,13 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/three.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
-<a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-angle-double-up"></i></a>
+<a class="navbar-brand js-scroll-trigger" href="#page-top"><div class="nas" id="treeJS"></div><!-- <i class="fas fa-angle-double-up"></i> --></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
@@ -37,6 +38,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="img/avatar.png" alt="" /><!-- Masthead Heading-->
+                <div id="treeJS"></div>
                 <h1 class=" text-uppercase mb-0">Vitold Radkevich</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -50,6 +52,51 @@
                 <p class="masthead-subheading font-weight-light mb-0">Java - Web Developer - Spring</p>
             </div>
         </header>
+
+<script defer >
+const scene = new THREE.Scene();
+
+camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
+
+const renderer = new THREE.WebGLRenderer({ alpha: true });
+renderer.setSize( 100, 100 );
+
+document.getElementById('treeJS').appendChild(renderer.domElement);
+
+const geometry = new THREE.SphereGeometry( 15, 48, 48 );
+
+const material = new THREE.MeshNormalMaterial();
+
+const mesh = new THREE.Mesh(geometry, material);
+
+mesh.scale.x = 0.1;
+mesh.scale.y = 0.1;
+mesh.scale.z = 0.1;
+
+scene.add(mesh);
+
+camera.position.z = 5;
+
+const frontSpot = new THREE.SpotLight(0xeeeece);
+frontSpot.position.set(1000, 1000, 1000);
+scene.add(frontSpot);
+
+const frontSpot2 = new THREE.SpotLight(0xddddce);
+frontSpot2.position.set(-500, -500, -500);
+scene.add(frontSpot2);
+
+const animate = function () {
+  requestAnimationFrame(animate);
+
+  mesh.rotation.x += 0.01;
+  mesh.rotation.y += 0.02;
+  mesh.rotation.z += 0.1;
+
+  renderer.render(scene, camera);
+};
+      animate();
+    </script>
+
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
@@ -870,5 +917,9 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Core 3D-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three/js/r123/three.min.js"></script>
+        <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLRFLoader.js"></script>
+
     </body>
 </html>
