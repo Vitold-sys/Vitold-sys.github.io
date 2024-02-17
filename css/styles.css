@@ -10350,3 +10350,72 @@ form .row:first-child .floating-label-form-group {
     border-left: solid 1px #aaa;
     background-color: #eee;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#progress-bar-container {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#progress-bar {
+  height: 100%;
+  border-radius: 0.1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: load 3s linear;
+  background: linear-gradient(90deg, #46c4e0, #17a2b8, #8aacac, #5fe0e0, #17a2b8, #17a2b8);
+  background-size: 600% 100%;
+}
+
+@keyframes load {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+#resultexpertime {
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #17a2b8;
+  }
+  100% {
+    box-shadow: 0 0 20px #17a2b8;
+  }
+}
+
+#loading-textexpertime {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  animation: pulsate 1s infinite alternate;
+}
+
+@keyframes pulsate {
+  0% {
+    color: #17a2b8;
+    text-shadow: 0 0 10px #17a2b8;
+  }
+  100% {
+    color: #0d6efd;
+    text-shadow: 0 0 20px #0d6efd;
+  }
+}
