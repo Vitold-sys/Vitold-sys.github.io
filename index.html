@@ -16,6 +16,18 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet"/>
     <script src="js/three.js"></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body id="page-top">
 <!-- Navigation-->
@@ -29,11 +41,11 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                                     href="#portfolio">Portfolio</a></li>
+                                                     href="#about">About</a></li>
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                                      href="#certification">Certifications</a></li>
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                                                     href="#about">About</a></li>
+                                                     href="#portfolio">Portfolio</a></li>
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                                                      href="#contact">Contacts</a></li>
             </ul>
@@ -107,6 +119,34 @@
     animate();
 </script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var items = document.querySelectorAll('.fade-in');
+        var currentItem = 0;
+
+        function fadeIn() {
+            if (currentItem < items.length && isElementInViewport(items[currentItem])) {
+                items[currentItem].classList.add('show');
+                currentItem++;
+            }
+        }
+
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        window.addEventListener('scroll', fadeIn);
+        window.addEventListener('resize', fadeIn);
+        document.addEventListener('DOMContentLoaded', fadeIn);
+    });
+</script>
+
 <!-- About Section-->
 <section class="page-section text-secondary mb-0" id="about">
     <div class="container">
@@ -127,15 +167,20 @@
         <div class="row text">
             <div class="col-lg-10 ml-auto">
                 <p class="lead">
-                <p> Have experience in java about 5 years</p>
-                <p>   My tech skills: </p>
-                <p> Backend: Java, Spring (Core, Boot, MVC, Data, Security, Cloud)</p>
-                <p> Databases: PostgreSQL, MySQL, MongoDB, Hibernate</p>
-                <p> Cloud: AWS (EC2, Beanstalk, Lightsail, ASG, ELB, VPC, ECS, RDS, S3, SNS, SQS, Aurora, CloudFront, IAM, CloudWatch, CloudFormation, API Gateway, Route53, Certificate Manager, Cognito, Lambda, DynamoDB), Azure</p>
-                <p> Testing: JUnit, Mockito</p>
-                <p> Software Architectures & DevOps: REST, GraphQL, Microservices (message queuing, API gateway, service discovery, load balancing, centralized configurations, tracing and logging, containerization), RabbitMQ, Kafka, Docker, Kubernetes(K8s), Docker Compose, CI/CD (Jenkins)</p>
-                <p> Version control: GitHub, Bitbucket</p>
-                <p> AWS certified </p>
+                <p class="font-italic">Have experience in Java for about 5 years</p>
+                <p class="font-weight-bold mb-0 h4">My tech skills:</p>
+                <p/>
+                <p class="fade-in" id="item1"><strong> <i class="fas fa-circle-notch fa-spin text-info"></i> Backend:</strong> Java, Spring (Core, Boot, MVC, Data, Security, Cloud)</p>
+                <p class="fade-in" id="item2"><strong> <i class="fas fa-circle-notch fa-spin text-info"></i> Databases:</strong> PostgreSQL, MySQL, MongoDB, Hibernate</p>
+                <p class="fade-in" id="item3"><strong> <i class="fas fa-circle-notch fa-spin text-info"></i> Cloud:</strong> AWS (EC2, Beanstalk, Lightsail, ASG, ELB, VPC, ECS, RDS, S3, SNS, SQS, Aurora, CloudFront, IAM, CloudWatch, CloudFormation, API Gateway, Route53, Certificate Manager, Cognito, Lambda, DynamoDB), Azure</p>
+                <p class="fade-in" id="item4"><strong> <i class="fas fa-circle-notch fa-spin text-info"></i> Testing:</strong> JUnit, Mockito</p>
+                <p class="fade-in" id="item5"><strong> <i class="fas fa-circle-notch fa-spin text-info"></i> Software Architectures & DevOps:</strong> REST, Microservices (message queuing, API gateway, service discovery, load balancing, centralized configurations, tracing and logging, containerization), RabbitMQ, Kafka, Docker, Kubernetes(K8s), Docker Compose, CI/CD (Jenkins)</p>
+                <p class="fade-in" id="item6"><strong> <i class="fas fa-circle-notch fa-spin text-info"></i> Version control:</strong> GitHub, Bitbucket</p>
+                <p class="fade-in" id="item7"><strong> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award text-warning" viewBox="0 0 16 16">
+                    <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                </svg> AWS certified</strong></p>
+                </p>
             </div>
         </div>
 
