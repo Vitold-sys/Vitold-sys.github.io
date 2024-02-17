@@ -42,7 +42,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            animation: load 2s linear;
+            animation: load 3s linear;
             background: linear-gradient(90deg, #46c4e0, #17a2b8, #8aacac, #5fe0e0, #17a2b8, #17a2b8);
             background-size: 600% 100%;
         }
@@ -68,6 +68,24 @@
                 box-shadow: 0 0 20px #17a2b8;
             }
         }
+
+        #loading-textexpertime {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            animation: pulsate 1s infinite alternate;
+        }
+
+        @keyframes pulsate {
+            0% {
+                color: #17a2b8;
+                text-shadow: 0 0 10px #17a2b8;
+            }
+            100% {
+                color: #0d6efd;
+                text-shadow: 0 0 20px #0d6efd;
+            }
+        }
+
     </style>
 </head>
 <body id="page-top">
@@ -205,6 +223,7 @@
                 clearInterval(loadingInterval);
 
                 document.getElementById("progress-bar-container").style.opacity = 0;
+                document.getElementById("loading-textexpertime").style.display = "none";
                 document.getElementById("resultexpertime").classList.remove("d-none");
 
                 const years = Math.floor(totalMonths / 12);
@@ -212,7 +231,7 @@
 
                 document.getElementById("experience-text").innerText = `Have experience in Java for about ${years} years and ${remainingMonths} months.`;
             }
-        }, 20);
+        }, 30);
     });
 </script>
 
@@ -236,6 +255,7 @@
         <div class="row text">
             <div class="col-lg-16 ml-auto">
                 <p class="lead">
+                <div id="loading-textexpertime" class="font-italic about-info">Calculation experience in progress:</div>
                 <div id="progress-bar-container">
                     <div id="progress-bar"></div>
                 </div>
@@ -243,7 +263,7 @@
                     <p id="experience-text" class="font-italic about-info"></p>
                 </div>
                 </p>
-                <p class="font-weight-bold mb-2 h2 ">My tech skills:</p>
+                <p class="font-weight-bold mb-2 h2 ">My technical skills:</p>
                 <p/>
                 <p class="fade-in about-info" id="item1"><strong> <i class="fas fa-circle-notch fa-spin text-info"></i>
                     Backend:</strong> Java, Spring (Core, Boot, MVC, Data, Security, Cloud)</p>
@@ -416,7 +436,6 @@
         </div>
         <!-- Portfolio Grid Items-->
         <div class="row">
-            <!-- Portfolio Item 1-->
             <!-- Portfolio Item 4 -->
             <div class="col-md-6 col-lg-4 mb-3">
                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
