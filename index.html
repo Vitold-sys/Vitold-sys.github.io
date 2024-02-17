@@ -1,926 +1,971 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Vitold Radkevich</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <script src="js/three.js"></script>
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container">
-<a class="navbar-brand js-scroll-trigger" href="#page-top"><div class="nas" id="treeJS"></div><!-- <i class="3dOn fas fa-angle-double-up"></i> --></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#certification">Certifications</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contacts</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Vitold Radkevich</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script src="js/three.js"></script>
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <div class="nas" id="treeJS"></div><!-- <i class="3dOn fas fa-angle-double-up"></i> --></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                                                     href="#portfolio">Portfolio</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                                                     href="#certification">Certifications</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                                                     href="#about">About</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                                                     href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="img/avatar.png" alt="" /><!-- Masthead Heading-->
-                <div id="treeJS"></div>
-                <h1 class=" text-uppercase mb-0">Vitold Radkevich</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                         <i class="fas fa-graduation-cap"></i>
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="img/avatar.png" alt=""/>
+        <!-- Masthead Heading-->
+        <div id="treeJS"></div>
+        <h1 class=" text-uppercase mb-0">Vitold Radkevich</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">Java - Web Developer - AWS</p>
+    </div>
+</header>
+
+<script defer>
+    const scene = new THREE.Scene();
+
+    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
+
+    const renderer = new THREE.WebGLRenderer({alpha: true});
+    renderer.setSize(50, 50);
+
+    document.getElementById('treeJS').appendChild(renderer.domElement);
+
+    //const geometry = new THREE.SphereGeometry( 15, 48, 48 );
+
+    const geometry = new THREE.BoxGeometry(6, 24, 24);
+
+    const material = new THREE.MeshNormalMaterial();
+
+    const mesh = new THREE.Mesh(geometry, material);
+
+    mesh.scale.x = 0.1;
+    mesh.scale.y = 0.1;
+    mesh.scale.z = 0.1;
+
+    scene.add(mesh);
+
+    camera.position.z = 5;
+
+    const frontSpot = new THREE.SpotLight(0xeeeece);
+    frontSpot.position.set(1000, 1000, 1000);
+    scene.add(frontSpot);
+
+    const frontSpot2 = new THREE.SpotLight(0xddddce);
+    frontSpot2.position.set(-500, -500, -500);
+    scene.add(frontSpot2);
+
+    const animate = function () {
+        requestAnimationFrame(animate);
+
+        mesh.rotation.x += 0.01;
+        mesh.rotation.y += 0.01;
+        mesh.rotation.z += 0.1;
+
+        renderer.render(scene, camera);
+    };
+    animate();
+</script>
+
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-box-open"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row">
+            <!-- Portfolio Item 1-->
+            <!-- Portfolio Item 4 -->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
                     </div>
-                    <div class="divider-custom-line"></div>
+                    <img class="img-fluid" src="img/portfolio/belbort.png" alt="">
                 </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Java - Web Developer - Spring</p>
             </div>
-        </header>
 
-<script defer >
-const scene = new THREE.Scene();
-
-camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
-
-const renderer = new THREE.WebGLRenderer({ alpha: true });
-renderer.setSize( 50, 50 );
-
-document.getElementById('treeJS').appendChild(renderer.domElement);
-
-//const geometry = new THREE.SphereGeometry( 15, 48, 48 );
-
-const geometry = new THREE.BoxGeometry( 6, 24, 24 ); 
- 
-const material = new THREE.MeshNormalMaterial();
-
-const mesh = new THREE.Mesh(geometry, material);
-
-mesh.scale.x = 0.1;
-mesh.scale.y = 0.1;
-mesh.scale.z = 0.1;
-
-scene.add(mesh);
-
-camera.position.z = 5;
-
-const frontSpot = new THREE.SpotLight(0xeeeece);
-frontSpot.position.set(1000, 1000, 1000);
-scene.add(frontSpot);
-
-const frontSpot2 = new THREE.SpotLight(0xddddce);
-frontSpot2.position.set(-500, -500, -500);
-scene.add(frontSpot2);
-
-const animate = function () {
-  requestAnimationFrame(animate);
-
-  mesh.rotation.x += 0.01;
-  mesh.rotation.y += 0.01;
-  mesh.rotation.z += 0.1;
-
-  renderer.render(scene, camera);
-};
-      animate();
-    </script>
-
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                       <i class="fas fa-box-open"></i>
+            <!-- Portfolio Item 1 -->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
                     </div>
-                    <div class="divider-custom-line"></div>
+                    <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
                 </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row">
-                    <!-- Portfolio Item 1-->
-                    <!-- Portfolio Item 4 -->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/belbort.png" alt="">
-          </div>
-        </div>
 
-        <!-- Portfolio Item 1 -->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 5 -->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-android" src="img/portfolio/android.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 3 -->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-          </div>
-        </div>
-
-         <!-- Portfolio Item 6 -->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/itra.png" alt="">
-          </div>
-        </div>
-
-       <!-- Portfolio Item 7 -->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/jsp.png" alt="">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 8 -->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/rest.png" alt="">
-          </div>
-        </div>
-        </div>
-      <!-- /.row -->
-            </div>
-        </section>
-
-        <!-- Certification Section-->
-        <section class="page-section portfolio bg-primary" id="certification">
-            <div class="container">
-                <!-- Certification Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Certifications</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                       <i class="fas fa-project-diagram text-white"></i>
+            <!-- Portfolio Item 2 -->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
                     </div>
-                    <div class="divider-custom-line"></div>
+                    <img class="img-fluid" src="img/portfolio/cake.png" alt="">
                 </div>
-                <!-- Certification Grid Items-->
-                <div class="row">
-                                 <!-- Certification Item 11-->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="mx-auto">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
             </div>
-            <img class="img-fluid" src="img\certificates/linux.jpg" alt="">
-          </div>
-        </div>
-                    <!-- Certification Item 9-->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="mx-auto">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            </div>
-            <img class="img-fluid" src="img\certificates/9.jpg" alt="">
-          </div>
-        </div>
-              <!-- Certification Item 8-->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="mx-auto">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            </div>
-            <img class="img-fluid" src="img\certificates/8.jpg" alt="">
-          </div>
-        </div>
-                      <!-- Certification Item 7-->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="mx-auto">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            </div>
-            <img class="img-fluid" src="img\certificates/7.jpg" alt="">
-          </div>
-        </div>
-                      <!-- Certification Item 6-->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="mx-auto">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            </div>
-            <img class="img-fluid" src="img\certificates/6.jpg" alt="">
-          </div>
-        </div>
-                      <!-- Certification Item 5-->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="mx-auto">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            </div>
-            <img class="img-fluid" src="img\certificates/5.jpg" alt="">
-          </div>
-        </div>
-                        <!-- Certification Item 4-->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="mx-auto">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            </div>
-            <img class="img-fluid" src="img\certificates/4.jpg" alt="">
-          </div>
-        </div>
-                        <!-- Certification Item 3-->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="mx-auto">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            </div>
-            <img class="img-fluid" src="img\certificates/3.jpg" alt="">
-          </div>
-        </div>
-                        <!-- Certification Item 2-->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="mx-auto">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            </div>
-            <img class="img-fluid" src="img\certificates/2.jpg" alt="">
-          </div>
-        </div>
-                        <!-- Certification Item 1-->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="mx-auto">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            </div>
-            <img class="img-fluid" src="img\certificates/1.jpg" alt="">
-          </div>
-        </div>
-                       <!-- Certification Item 10-->
-        <div class="col-md-6 col-lg-4 mb-3">
-          <div class="mx-auto">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            </div>
-            <img class="img-fluid" src="img\certificates/10.jpg" alt="">
-          </div>
-        </div>
-      
-        </div>
-      <!-- /.row -->
-            </div>
-        </section>
 
-        <!-- About Section-->
-        <section class="page-section text-secondary mb-0" id="about">
+            <!-- Portfolio Item 5 -->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-android" src="img/portfolio/android.png" alt="">
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+                </div>
+            </div>
+
+            <!-- Portfolio Item 6 -->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/itra.png" alt="">
+                </div>
+            </div>
+
+            <!-- Portfolio Item 7 -->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/jsp.png" alt="">
+                </div>
+            </div>
+
+            <!-- Portfolio Item 8 -->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="img/portfolio/rest.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+</section>
+
+<!-- Certification Section-->
+<section class="page-section portfolio bg-primary" id="certification">
+    <div class="container">
+        <!-- Certification Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Certifications</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-project-diagram text-white"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Certification Grid Items-->
+        <div class="row">
+            <!-- Certification Item 12-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/cloud_partitioner.png" alt="">
+                </div>
+            </div>
+            <!-- Certification Item 11-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/linux.jpg" alt="">
+                </div>
+            </div>
+            <!-- Certification Item 9-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/9.jpg" alt="">
+                </div>
+            </div>
+            <!-- Certification Item 8-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/8.jpg" alt="">
+                </div>
+            </div>
+            <!-- Certification Item 7-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/7.jpg" alt="">
+                </div>
+            </div>
+            <!-- Certification Item 6-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/6.jpg" alt="">
+                </div>
+            </div>
+            <!-- Certification Item 5-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/5.jpg" alt="">
+                </div>
+            </div>
+            <!-- Certification Item 4-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/4.jpg" alt="">
+                </div>
+            </div>
+            <!-- Certification Item 3-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/3.jpg" alt="">
+                </div>
+            </div>
+            <!-- Certification Item 2-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/2.jpg" alt="">
+                </div>
+            </div>
+            <!-- Certification Item 1-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/1.jpg" alt="">
+                </div>
+            </div>
+            <!-- Certification Item 10-->
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="mx-auto">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    </div>
+                    <img class="img-fluid" src="img/certificates/10.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div>
+</section>
+
+<!-- About Section-->
+<section class="page-section text-secondary mb-0" id="about">
     <div class="container">
 
-      <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary">About me</h2>
+        <!-- About Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary">About me</h2>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-         <i class="fas fa-id-card"></i>
+        <!-- Icon Divider -->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-id-card"></i>
+            </div>
+            <div class="divider-custom-line"></div>
         </div>
-        <div class="divider-custom-line"></div>
-      </div>
 
-      <!-- About Section Content -->
-      <div class="row text">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">I am a purposeful person. I quickly find a common language with people, pleasant in communication. Quickly trained and polite in communication. 40 minutes a day I devote to improving English skills. Action plan for the day, week, month. I like self-study: I independently studied Spring, Hibernate. Constantly improving my theoretical knowledge in practice.</p>
+        <!-- About Section Content -->
+        <div class="row text">
+            <div class="col-lg-4 ml-auto">
+                <p class="lead">I am a purposeful person. I quickly find a common language with people, pleasant in
+                    communication. Quickly trained and polite in communication. 40 minutes a day I devote to improving
+                    English skills. Action plan for the day, week, month. I like self-study: I independently studied
+                    Spring, Hibernate. Constantly improving my theoretical knowledge in practice.</p>
+            </div>
+            <div class="col-lg-4 mr-auto">
+                <p class="lead">I studied Python myself, then I realized that I wanted to learn Java. I have graduated
+                    from IT Academy Java Fundamentals courses. Finished internship as a Java developer with success.</p>
+                <p class="lead"> I attend events and conferences that helps me grow as a specialist.</p>
+                <p class="lead"> AWS certified.</p>
+            </div>
         </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">I studied Python myself, then I realized that I wanted to learn Java. I have graduated from IT Academy Java Fundamentals courses. Finished internship as a Java developer with success.</p>
-          <p class="lead"> I attend events and conferences that helps me grow as a specialist.</p>
-          <p class="lead"> AWS certified.</p>
-        </div>
-      </div>
 
-      <!-- About Section Button -->
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-info" href="https://github.com/Vitold-sys">
-          <i class="fab fa-github mr-2"></i>
-          Here you can view my code
-        </a>
-      </div>
+        <!-- About Section Button -->
+        <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-info" href="https://github.com/Vitold-sys">
+                <i class="fab fa-github mr-2"></i>
+                Here you can view my code
+            </a>
+        </div>
 
     </div>
-  </section>
-        <!-- Contact Section -->
-  <section class="page-section bg-primary" id="contact">
+</section>
+<!-- Contact Section -->
+<section class="page-section bg-primary" id="contact">
     <div class="container">
 
-      <!-- Contact Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Contact Me</h2>
+        <!-- Contact Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Contact Me</h2>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-door-open text-white"></i>
+        <!-- Icon Divider -->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-door-open text-white"></i>
+            </div>
+            <div class="divider-custom-line"></div>
         </div>
-        <div class="divider-custom-line"></div>
-      </div>
 
-      <!-- Contact Section Form -->
-                <div class="row">
-                    <div class="col-lg-3 ml-auto mt-2 text-center">
-                        <a class="btn btn-outline-info btn-xl" href="https://www.linkedin.com/in/vitold-radkevich/">
-          <i class="fab fa-linkedin"></i> Linkedin</a>
-                    </div>
-                    <div class="col-lg-3 mr-auto mt-2 text-center">
-                      <a class="btn btn-outline-info btn-xl" href="mailto:radkevich_vitold@mail.ru">
-          <i class="fab fa-google"></i> Mail</a>
-                    </div>
+        <!-- Contact Section Form -->
+        <div class="row">
+            <div class="col-lg-3 ml-auto mt-2 text-center">
+                <a class="btn btn-outline-info btn-xl" href="https://www.linkedin.com/in/vitold-radkevich/">
+                    <i class="fab fa-linkedin"></i> Linkedin</a>
+            </div>
+            <div class="col-lg-3 mr-auto mt-2 text-center">
+                <a class="btn btn-outline-info btn-xl" href="mailto:radkevichvit@gmail.com">
+                    <i class="fab fa-google"></i> Mail</a>
+            </div>
 
-                    <div class="col-lg-2 mr-auto mt-2 text-center">
-                        <a class="btn btn-outline-info btn-xl" href="CV/Radkevich-CV-2021.pdf">
-           <i class="far fa-file-word"></i> My CV</a>
-                    </div>
-                   
-                    <div class="col-lg-2 mr-auto mt-2 mb-2 text-center">
-                         <a class="btn btn-outline-info btn-xl" href="tel:+375295501501">
-           <i class="fas fa-mobile-alt"></i> Call me</a>
-                    </div>
-                </div>
+            <div class="col-lg-2 mr-auto mt-2 text-center">
+                <a class="btn btn-outline-info btn-xl" href="CV/Radkevich-CV-2021.pdf">
+                    <i class="far fa-file-word"></i> My CV</a>
+            </div>
+
+            <div class="col-lg-2 mr-auto mt-2 mb-2 text-center">
+                <a class="btn btn-outline-info btn-xl" href="tel:+48571091688">
+                    <i class="fas fa-mobile-alt"></i> Call me</a>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-        <!-- Footer -->
-  <footer class="footer text-center">
-        <!-- Footer Location -->
-          <h4 class="text-uppercase mb-4">Location</h4>
-          <div class="lead mb-0">
-          <i class="fas fa-map-marker-alt text-danger"></i>
-           Belarus, Minsk   
-          </div>
-  </footer>
+<!-- Footer -->
+<footer class="footer text-center">
+    <!-- Footer Location -->
+    <h4 class="text-uppercase mb-4">Location</h4>
+    <div class="lead mb-0">
+        <i class="fas fa-map-marker-alt text-danger"></i>
+        Poland, Warsaw
+    </div>
+</footer>
 
-  <!-- Copyright Section -->
-  <section class="copyright py-4 text-center text-white">
+<!-- Copyright Section -->
+<section class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>Copyright &copy; Vitold Radkevich 2019</small>
+        <small>Copyright &copy; Vitold Radkevich 2019</small>
     </div>
-  </section>
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-        <div class="scroll-to-top d-lg-none position-fixed">
-            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
-        </div>
-         <!-- Portfolio Modals -->
+</section>
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+<div class="scroll-to-top d-lg-none position-fixed">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
+            class="fa fa-chevron-up"></i></a>
+</div>
+<!-- Portfolio Modals -->
 
-  <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+<!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+     aria-labelledby="portfolioModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
             <i class="fas fa-times"></i>
           </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Webber</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fab fa-laravel"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Webber</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <h5 class="mb-1">Chat web application</h5>
+                            <div class="card text-white bg-info mb-3" class="mb-1">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        There is a welcome page, login page, user additions (when adding a user, you
+                                        must specify a username, password, as well as mail, to which a message will come
+                                        with a link to account activation); After login, the main functionality of the
+                                        application is available: chat; editing the password and Mail specified during
+                                        registration is also available.
+                                </div>
+                                <ul class="list-group list-group-item-info">
+                                    <li class="list-group-item"><h6>The following technologies have been used:</li>
+                                    <li class="list-group-item">
+                                        Spring - to create an MVC application;
+                                        <br>Freemarker - page templates;
+                                        <br>Bootstrap - for page layout;
+                                        <br>Flyway - for database migration;
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-outline-success" href="https://webber1.herokuapp.com/">
+                                <i class="fas fa-server"></i>
+                                Webber
+                            </a>
+                            <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/Vitbort_Spring_MVC">
+                                <i class="fab fa-git"></i>
+                                Repository
+                            </a>
+                            <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
+                                <i class="far fa-times-circle"></i>
+                                Back
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <h5 class="mb-1">Chat web application</h5>
-<div class="card text-white bg-info mb-3" class="mb-1">
-  <div class="card-body">
-    <p class="card-text">
-      There is a welcome page, login page, user additions (when adding a user, you must specify a username, password, as well as mail, to which a message will come with a link to account activation); After login, the main functionality of the application is available: chat; editing the password and Mail specified during registration is also available.
-  </div>
-  <ul class="list-group list-group-item-info">
-    <li class="list-group-item"><h6>The following technologies have been used:</li>
-    <li class="list-group-item">
-      Spring - to create an MVC application;
-<br>Freemarker - page templates;
-<br>Bootstrap - for page layout;
-<br>Flyway - for database migration;</li>
-  </ul>
-</div>
-<a class="btn btn-outline-success" href="https://webber1.herokuapp.com/">
-           <i class="fas fa-server"></i>
-          Webber
-        </a>
-        <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/Vitbort_Spring_MVC">
-           <i class="fab fa-git"></i>
-          Repository
-        </a> 
-                <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
-                  <i class="far fa-times-circle"></i>
-                  Back
-                </button>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
-    <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+<!-- Portfolio Modal 4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
+     aria-labelledby="portfolioModal4Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
             <i class="fas fa-times"></i>
           </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Belbort</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fab fa-laravel"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Belbort</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/belbort.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <h5 class="mb-1">Web application</h5>
+
+                            <div class="card text-white bg-info mb-3" class="mb-1">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Logging into the application is done through goolge account, after entering the
+                                        application displays the username, gender, age, profile photo. You can add
+                                        messages, exchange links, with the auto-play function.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-item-info">
+                                    <li class="list-group-item"><h6>The following technologies have been used:</li>
+                                    <li class="list-group-item">
+                                        Spring - to create an MVC application;
+                                        <br>Gradle - to build project;
+                                        <br> Vue, Vuetify - frontend;
+                                        <br>Webpack, Lombok;
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/Belbort">
+                                <i class="fab fa-git"></i>
+                                Belbort
+                            </a>
+                            <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
+                                <i class="far fa-times-circle"></i>
+                                Back
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/belbort.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <h5 class="mb-1">Web application</h5>
-
-<div class="card text-white bg-info mb-3" class="mb-1">
-  <div class="card-body">
-    <p class="card-text">
-      Logging into the application is done through goolge account, after entering the application displays the username, gender, age, profile photo. You can add messages, exchange links, with the auto-play function.
-    </p>
-  </div>
-  <ul class="list-group list-group-item-info">
-    <li class="list-group-item"><h6>The following technologies have been used:</li>
-    <li class="list-group-item">
-      Spring - to create an MVC application;
-<br>Gradle - to build project;
-<br> Vue, Vuetify - frontend;
-<br>Webpack, Lombok;
-    </li>
-    
-  </ul>
-</div>
- <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/Belbort">
-           <i class="fab fa-git"></i>
-          Belbort
-        </a>
-               <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
-                  <i class="far fa-times-circle"></i>
-                  Back
-                </button>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+<!-- Portfolio Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+     aria-labelledby="portfolioModal2Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
             <i class="fas fa-times"></i>
           </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Weather</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fab fa-laravel"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <h5 class="mb-1">Weather</h5>
-<div class="card text-white bg-info mb-3" class="mb-1">
-  <div class="card-body">
-    <p class="card-text">
-      An application that displays the weather for 5 days in advance, weather information was taken from the site: temperature, current state, humidity, Pressure, Wind speed.
-    </p>
-  </div>
-  <ul class="list-group list-group-item-info">
-    <li class="list-group-item"><h6>The following technologies have been used:</li>
-    <li class="list-group-item">
-      - For parsing the page used Jsoup;
-<br>- To select the necessary information regular expressions;
-<br>- To build the project I used Maven;
-    </li>
-    
-  </ul>
-</div>
-<a class="btn btn-outline-primary" href="https://lnkd.in/e8KUqvD">
-           <i class="fab fa-git"></i>
-          Link to the project
-        </a>
-                <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
-                  <i class="far fa-times-circle"></i>
-                  Back
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Weather</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <h5 class="mb-1">Weather</h5>
+                            <div class="card text-white bg-info mb-3" class="mb-1">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        An application that displays the weather for 5 days in advance, weather
+                                        information was taken from the site: temperature, current state, humidity,
+                                        Pressure, Wind speed.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-item-info">
+                                    <li class="list-group-item"><h6>The following technologies have been used:</li>
+                                    <li class="list-group-item">
+                                        - For parsing the page used Jsoup;
+                                        <br>- To select the necessary information regular expressions;
+                                        <br>- To build the project I used Maven;
+                                    </li>
 
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+                                </ul>
+                            </div>
+                            <a class="btn btn-outline-primary" href="https://lnkd.in/e8KUqvD">
+                                <i class="fab fa-git"></i>
+                                Link to the project
+                            </a>
+                            <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
+                                <i class="far fa-times-circle"></i>
+                                Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
+     aria-labelledby="portfolioModal5Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
             <i class="fas fa-times"></i>
           </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Android</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fab fa-laravel"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/android.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <h5 class="mb-1">Android project, with Google Maps</h5>
-<div class="card text-white bg-info mb-3" class="mb-1">
-  <div class="card-body">
-    <p class="card-text">
-      Display weather in different places.
-    </p>
-  </div>
-  <ul class="list-group list-group-item-info">
-    <li class="list-group-item"><h6>The following technologies have been used:</li>
-    <li class="list-group-item">
-      - Google Maps Api with token;
-<br>- Use accuweather to show weather;
-<br>- To build the project I used Gradle;
-    </li>
-    
-  </ul>
-</div>
-                <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/Golow">
-           <i class="fab fa-git"></i>
-          Repository
-        </a>
-                 <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
-                  <i class="far fa-times-circle"></i>
-                  Back
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Android</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/android.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <h5 class="mb-1">Android project, with Google Maps</h5>
+                            <div class="card text-white bg-info mb-3" class="mb-1">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Display weather in different places.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-item-info">
+                                    <li class="list-group-item"><h6>The following technologies have been used:</li>
+                                    <li class="list-group-item">
+                                        - Google Maps Api with token;
+                                        <br>- Use accuweather to show weather;
+                                        <br>- To build the project I used Gradle;
+                                    </li>
 
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+                                </ul>
+                            </div>
+                            <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/Golow">
+                                <i class="fab fa-git"></i>
+                                Repository
+                            </a>
+                            <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
+                                <i class="far fa-times-circle"></i>
+                                Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+     aria-labelledby="portfolioModal3Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
             <i class="fas fa-times"></i>
           </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Core Fundamentals</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fab fa-laravel"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Core Fundamentals</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <h5 class="mb-1">Java Core, Java Fundamentals</h5>
+                            <div class="card text-white bg-info mb-3" class="mb-1">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Examples of simple tasks.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-item-info">
+                                    <li class="list-group-item"><h6>The following technologies have been used:</li>
+                                    <li class="list-group-item">
+                                        - Exceptions;
+                                        <br>- Collections;
+                                        <br>- Stream;
+                                        <br>- Primitives java;
+                                        <br>- Concurrency;
+                                        <br>- OOP;
+                                        <br>- Object;
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/Java-core">
+                                <i class="fab fa-git"></i>
+                                Repository
+                            </a>
+                            <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
+                                <i class="far fa-times-circle"></i>
+                                Back
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <h5 class="mb-1">Java Core, Java Fundamentals</h5>
-                <div class="card text-white bg-info mb-3" class="mb-1">
-  <div class="card-body">
-    <p class="card-text">
-       Examples of simple tasks.
-    </p>
-  </div>
-  <ul class="list-group list-group-item-info">
-    <li class="list-group-item"><h6>The following technologies have been used:</li>
-    <li class="list-group-item">
-      - Exceptions;
-<br>- Collections;
-<br>- Stream;
-<br>- Primitives java;
-<br>- Concurrency;
-<br>- OOP;
-<br>- Object;
-    </li>
-  </ul>
-</div>
-                <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/Java-core">
-           <i class="fab fa-git"></i>
-          Repository
-        </a>
-                 <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
-                  <i class="far fa-times-circle"></i>
-                  Back
-                </button>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+<!-- Portfolio Modal 6 -->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
+     aria-labelledby="portfolioModal6Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
             <i class="fas fa-times"></i>
           </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bookreader</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fab fa-laravel"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bookreader</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/itra.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <h5 class="mb-1">Bookreader</h5>
+                            <div class="card text-white bg-info mb-3" class="mb-1">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        An application for reading books, the ability to save and add books, write
+                                        comments. Authentication through mail is provided, the administrator can delete
+                                        users, change their roles. Each user can change their mail and password. In
+                                        addition, I conducted tests with connection to a test database.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-item-info">
+                                    <li class="list-group-item"><h6>The following technologies have been used:</li>
+                                    <li class="list-group-item">
+                                        - Spring boot;
+                                        <br>- Hibernate;
+                                        <br>- Freemarker;
+                                        <br>- Flyway;
+                                        <br>- Postgres;
+                                        <br>- Spring MVC;
+                                        <br>- Spring Security;
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/bookreader1">
+                                <i class="fab fa-git"></i>
+                                Repository
+                            </a>
+                            <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
+                                <i class="far fa-times-circle"></i>
+                                Back
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/itra.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <h5 class="mb-1">Bookreader</h5>
-<div class="card text-white bg-info mb-3" class="mb-1">
-  <div class="card-body">
-    <p class="card-text">
-      An application for reading books, the ability to save and add books, write comments. Authentication through mail is provided, the administrator can delete users, change their roles. Each user can change their mail and password. In addition, I conducted tests with connection to a test database.
-    </p>
-  </div>
-  <ul class="list-group list-group-item-info">
-    <li class="list-group-item"><h6>The following technologies have been used:</li>
-    <li class="list-group-item">
-    - Spring boot;
-<br>- Hibernate;
-<br>- Freemarker;
-<br>- Flyway;
-<br>- Postgres;
-<br>- Spring MVC;
-<br>- Spring Security;
-</li>
-  </ul>
-</div>
- <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/bookreader1">
-           <i class="fab fa-git"></i>
-          Repository
-        </a>
-              <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
-                  <i class="far fa-times-circle"></i>
-                  Back
-                </button>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- Portfolio Modal 7 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal7Label" aria-hidden="true">
+<!-- Portfolio Modal 7 -->
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog"
+     aria-labelledby="portfolioModal7Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
             <i class="fas fa-times"></i>
           </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Vitbort</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fab fa-laravel"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Vitbort</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/jsp.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <h5 class="mb-1">Vitbort</h5>
+                            <div class="card text-white bg-info mb-3" class="mb-1">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        An application for chat, the ability to save and add messages. The administrator
+                                        can delete users, change their roles. Each user can change their mail and
+                                        password.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-item-info">
+                                    <li class="list-group-item"><h6>The following technologies have been used:</li>
+                                    <li class="list-group-item">
+                                        - Servlet
+                                        <br>- JSP
+                                        <br>- JSTL
+                                        <br>- Sessions
+                                        <br>- Front Controller
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-outline-primary"
+                               href="https://bitbucket.org/RadkevichVitold/messenger/src/Vitold/">
+                                <i class="fab fa-git"></i>
+                                Repository
+                            </a>
+                            <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
+                                <i class="far fa-times-circle"></i>
+                                Back
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/jsp.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <h5 class="mb-1">Vitbort</h5>
-<div class="card text-white bg-info mb-3" class="mb-1">
-  <div class="card-body">
-    <p class="card-text">
-      An application for chat, the ability to save and add messages. The administrator can delete users, change their roles. Each user can change their mail and password.
-    </p>
-  </div>
-  <ul class="list-group list-group-item-info">
-    <li class="list-group-item"><h6>The following technologies have been used:</li>
-    <li class="list-group-item">
-      - Servlet
-<br>- JSP
-<br>- JSTL
-<br>- Sessions
-<br>- Front Controller
-    </li>  
-  </ul>
-</div>
- <a class="btn btn-outline-primary" href="https://bitbucket.org/RadkevichVitold/messenger/src/Vitold/">
-           <i class="fab fa-git"></i>
-          Repository
-        </a>
-                <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
-                  <i class="far fa-times-circle"></i>
-                  Back
-                </button>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
-    <!-- Portfolio Modal 8 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal8Label" aria-hidden="true">
+<!-- Portfolio Modal 8 -->
+<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog"
+     aria-labelledby="portfolioModal8Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
             <i class="fas fa-times"></i>
           </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Rest-Vitbort</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fab fa-laravel"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Rest-Vitbort</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="img/portfolio/rest.png" alt="">
+                            <!-- Portfolio Modal - Text -->
+                            <h5 class="mb-1">Rest-Vitbort</h5>
+                            <div class="card text-white bg-info mb-3" class="mb-1">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        An application for chat, the ability to save and add messages.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-item-info">
+                                    <li class="list-group-item"><h6>The following technologies have been used:</li>
+                                    <li class="list-group-item">
+                                        - Spring
+                                        <br>- Hibernate
+                                        <br>- Postman
+                                        <br>- Swagger
+                                        <br>- Front Controller
+                                        <br>- Postgres
+                                        <br>- Jwt
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/Vitbort_social">
+                                <i class="fab fa-git"></i>
+                                Repository
+                            </a>
+                            <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
+                                <i class="far fa-times-circle"></i>
+                                Back
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/rest.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <h5 class="mb-1">Rest-Vitbort</h5>
-<div class="card text-white bg-info mb-3" class="mb-1">
-  <div class="card-body">
-    <p class="card-text">
-      An application for chat, the ability to save and add messages.
-    </p>
-  </div>
-  <ul class="list-group list-group-item-info">
-    <li class="list-group-item"><h6>The following technologies have been used:</li>
-    <li class="list-group-item">
-    - Spring 
-<br>- Hibernate
-<br>- Postman
-<br>- Swagger
-<br>- Front Controller
-<br>- Postgres
-<br>- Jwt
-</li>
-  </ul>
-</div>
- <a class="btn btn-outline-primary" href="https://github.com/Vitold-sys/Vitbort_social">
-           <i class="fab fa-git"></i>
-          Repository
-        </a>
-                 <button class="btn btn-outline-danger" href="#" data-dismiss="modal">
-                  <i class="far fa-times-circle"></i>
-                  Back
-                </button>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- Core 3D-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three/js/r123/three.min.js"></script>
-        <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLRFLoader.js"></script>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<script src="assets/mail/jqBootstrapValidation.js"></script>
+<script src="assets/mail/contact_me.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- Core 3D-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three/js/r123/three.min.js"></script>
+<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLRFLoader.js"></script>
 
-    </body>
+</body>
 </html>
