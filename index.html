@@ -353,7 +353,6 @@
             </div>
         </div>
     </div>
-    </div>
 </section>
 
 <!-- Contact Section -->
@@ -927,6 +926,16 @@
         </div>
     </div>
 </div>
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script>
+    var update;
+    update = function() {
+        requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+</script>
 <!-- Bootstrap core JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -1072,9 +1081,6 @@
         });
     };
 </script>
-
-<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
 
 </body>
 </html>
