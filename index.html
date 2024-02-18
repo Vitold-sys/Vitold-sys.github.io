@@ -43,24 +43,24 @@
 
 <!-- Masthead-->
 <header class="masthead text-white text-center" id="background3D">
-        <div id="hero">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="img/avatar.png" alt=""/>
-                <!-- Masthead Heading-->
-                <div id="treeJS"></div>
-                <h1 class=" text-uppercase mb-0">Vitold Radkevich</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
+    <div id="hero">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="img/avatar.png" alt=""/>
+            <!-- Masthead Heading-->
+            <div id="treeJS"></div>
+            <h1 class=" text-uppercase mb-0">Vitold Radkevich</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-graduation-cap"></i>
                 </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Java - Web Developer - AWS</p>
+                <div class="divider-custom-line"></div>
             </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Java - Web Developer - AWS</p>
         </div>
+    </div>
 </header>
 
 <script defer>
@@ -143,7 +143,7 @@
         const currentDate = new Date();
         const totalMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
             currentDate.getMonth() - startDate.getMonth();
-        const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+        const observer = new IntersectionObserver(handleIntersection, {threshold: 0.5});
         const targetElement = document.getElementById("experience-section");
 
         observer.observe(targetElement);
@@ -166,7 +166,7 @@
                             const years = Math.floor(totalMonths / 12);
                             const remainingMonths = totalMonths % 12;
 
-                            document.getElementById("experience-text").innerText = `Have experience in Java for about ${years} years and ${remainingMonths} months.`;
+                            document.getElementById("experience-text").innerHTML = `Have experience in Java for about <strong>${years} years</strong> and <strong>${remainingMonths} months</strong>.`;
                         }
                     }, 30);
 
