@@ -141,34 +141,44 @@
     document.addEventListener("DOMContentLoaded", function () {
         const startDate = new Date("June 1, 2019");
         const currentDate = new Date();
-
         const totalMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
             currentDate.getMonth() - startDate.getMonth();
+        const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+        const targetElement = document.getElementById("experience-section");
 
-        let progress = 0;
-        const loadingInterval = setInterval(function () {
-            progress++;
-            document.getElementById("progress-bar").style.width = progress + "%";
+        observer.observe(targetElement);
 
-            if (progress >= 100) {
-                clearInterval(loadingInterval);
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    let progress = 0;
+                    const loadingInterval = setInterval(function () {
+                        progress++;
+                        document.getElementById("progress-bar").style.width = progress + "%";
 
-                document.getElementById("progress-bar-container").style.opacity = 0;
-                document.getElementById("loading-textexpertime").style.display = "none";
-                document.getElementById("resultexpertime").classList.remove("d-none");
+                        if (progress >= 100) {
+                            clearInterval(loadingInterval);
 
-                const years = Math.floor(totalMonths / 12);
-                const remainingMonths = totalMonths % 12;
+                            document.getElementById("progress-bar-container").style.opacity = 0;
+                            document.getElementById("loading-textexpertime").style.display = "none";
+                            document.getElementById("resultexpertime").classList.remove("d-none");
 
-                document.getElementById("experience-text").innerText = `Have experience in Java for about ${years} years and ${remainingMonths} months.`;
-            }
-        }, 30);
+                            const years = Math.floor(totalMonths / 12);
+                            const remainingMonths = totalMonths % 12;
+
+                            document.getElementById("experience-text").innerText = `Have experience in Java for about ${years} years and ${remainingMonths} months.`;
+                        }
+                    }, 30);
+
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
     });
 </script>
 
 <script>
     window.onload = function () {
-        // Load and use neonCursor after the page is fully loaded
         import('https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js').then(({neonCursor}) => {
             neonCursor({
                 el: document.getElementById('background3D'),
@@ -206,7 +216,7 @@
         <!-- About Section Content -->
         <div class="row text">
             <div class="col-lg-16 ml-auto">
-                <p class="lead">
+                <p class="lead" id="experience-section">
                 <div id="loading-textexpertime" class="font-italic about-info">Calculation experience in progress:</div>
                 <div id="progress-bar-container">
                     <div id="progress-bar"></div>
