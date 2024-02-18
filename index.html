@@ -63,140 +63,6 @@
     </div>
 </header>
 
-<script defer>
-    const scene = new THREE.Scene();
-
-    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
-
-    const renderer = new THREE.WebGLRenderer({alpha: true});
-    renderer.setSize(50, 50);
-
-    document.getElementById('treeJS').appendChild(renderer.domElement);
-
-    //const geometry = new THREE.SphereGeometry( 15, 48, 48 );
-
-    const geometry = new THREE.BoxGeometry(6, 24, 24);
-
-    const material = new THREE.MeshNormalMaterial();
-
-    const mesh = new THREE.Mesh(geometry, material);
-
-    mesh.scale.x = 0.1;
-    mesh.scale.y = 0.1;
-    mesh.scale.z = 0.1;
-
-    scene.add(mesh);
-
-    camera.position.z = 5;
-
-    const frontSpot = new THREE.SpotLight(0xeeeece);
-    frontSpot.position.set(1000, 1000, 1000);
-    scene.add(frontSpot);
-
-    const frontSpot2 = new THREE.SpotLight(0xddddce);
-    frontSpot2.position.set(-500, -500, -500);
-    scene.add(frontSpot2);
-
-    const animate = function () {
-        requestAnimationFrame(animate);
-
-        mesh.rotation.x += 0.01;
-        mesh.rotation.y += 0.01;
-        mesh.rotation.z += 0.1;
-
-        renderer.render(scene, camera);
-    };
-    animate();
-</script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var items = document.querySelectorAll('.fade-in');
-        var currentItem = 0;
-
-        function fadeIn() {
-            if (currentItem < items.length && isElementInViewport(items[currentItem])) {
-                items[currentItem].classList.add('show');
-                currentItem++;
-            }
-        }
-
-        function isElementInViewport(el) {
-            var rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        window.addEventListener('scroll', fadeIn);
-        window.addEventListener('resize', fadeIn);
-        document.addEventListener('DOMContentLoaded', fadeIn);
-    });
-</script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const startDate = new Date("June 1, 2019");
-        const currentDate = new Date();
-        const totalMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
-            currentDate.getMonth() - startDate.getMonth();
-        const observer = new IntersectionObserver(handleIntersection, {threshold: 0.5});
-        const targetElement = document.getElementById("experience-section");
-
-        observer.observe(targetElement);
-
-        function handleIntersection(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    let progress = 0;
-                    const loadingInterval = setInterval(function () {
-                        progress++;
-                        document.getElementById("progress-bar").style.width = progress + "%";
-
-                        if (progress >= 100) {
-                            clearInterval(loadingInterval);
-
-                            document.getElementById("progress-bar-container").style.opacity = 0;
-                            document.getElementById("loading-textexpertime").style.display = "none";
-                            document.getElementById("resultexpertime").classList.remove("d-none");
-
-                            const years = Math.floor(totalMonths / 12);
-                            const remainingMonths = totalMonths % 12;
-
-                            document.getElementById("experience-text").innerHTML = `Have experience in Java for about <strong>${years} years</strong> and <strong>${remainingMonths} months</strong>.`;
-                        }
-                    }, 30);
-
-                    observer.unobserve(entry.target);
-                }
-            });
-        }
-    });
-</script>
-
-<script>
-    window.onload = function () {
-        import('https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js').then(({neonCursor}) => {
-            neonCursor({
-                el: document.getElementById('background3D'),
-                shaderPoints: 10,
-                curvePoints: 80,
-                curveLerp: 0.5,
-                radius1: 5,
-                radius2: 30,
-                velocityTreshold: 10,
-                sleepRadiusX: 100,
-                sleepRadiusY: 100,
-                sleepTimeCoefX: 0.0025,
-                sleepTimeCoefY: 0.0025
-            });
-        });
-    };
-</script>
-
 <!-- About Section-->
 <section class="page-section text-secondary mb-0" id="about">
     <div class="container">
@@ -1082,6 +948,140 @@
 <!-- Core 3D-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three/js/r123/three.min.js"></script>
 <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLRFLoader.js"></script>
+
+<script defer>
+    const scene = new THREE.Scene();
+
+    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
+
+    const renderer = new THREE.WebGLRenderer({alpha: true});
+    renderer.setSize(50, 50);
+
+    document.getElementById('treeJS').appendChild(renderer.domElement);
+
+    //const geometry = new THREE.SphereGeometry( 15, 48, 48 );
+
+    const geometry = new THREE.BoxGeometry(6, 24, 24);
+
+    const material = new THREE.MeshNormalMaterial();
+
+    const mesh = new THREE.Mesh(geometry, material);
+
+    mesh.scale.x = 0.1;
+    mesh.scale.y = 0.1;
+    mesh.scale.z = 0.1;
+
+    scene.add(mesh);
+
+    camera.position.z = 5;
+
+    const frontSpot = new THREE.SpotLight(0xeeeece);
+    frontSpot.position.set(1000, 1000, 1000);
+    scene.add(frontSpot);
+
+    const frontSpot2 = new THREE.SpotLight(0xddddce);
+    frontSpot2.position.set(-500, -500, -500);
+    scene.add(frontSpot2);
+
+    const animate = function () {
+        requestAnimationFrame(animate);
+
+        mesh.rotation.x += 0.01;
+        mesh.rotation.y += 0.01;
+        mesh.rotation.z += 0.1;
+
+        renderer.render(scene, camera);
+    };
+    animate();
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var items = document.querySelectorAll('.fade-in');
+        var currentItem = 0;
+
+        function fadeIn() {
+            if (currentItem < items.length && isElementInViewport(items[currentItem])) {
+                items[currentItem].classList.add('show');
+                currentItem++;
+            }
+        }
+
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        window.addEventListener('scroll', fadeIn);
+        window.addEventListener('resize', fadeIn);
+        document.addEventListener('DOMContentLoaded', fadeIn);
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const startDate = new Date("June 1, 2019");
+        const currentDate = new Date();
+        const totalMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+            currentDate.getMonth() - startDate.getMonth();
+        const observer = new IntersectionObserver(handleIntersection, {threshold: 0.5});
+        const targetElement = document.getElementById("experience-section");
+
+        observer.observe(targetElement);
+
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    let progress = 0;
+                    const loadingInterval = setInterval(function () {
+                        progress++;
+                        document.getElementById("progress-bar").style.width = progress + "%";
+
+                        if (progress >= 100) {
+                            clearInterval(loadingInterval);
+
+                            document.getElementById("progress-bar-container").style.opacity = 0;
+                            document.getElementById("loading-textexpertime").style.display = "none";
+                            document.getElementById("resultexpertime").classList.remove("d-none");
+
+                            const years = Math.floor(totalMonths / 12);
+                            const remainingMonths = totalMonths % 12;
+
+                            document.getElementById("experience-text").innerHTML = `Have experience in Java for about <strong>${years} years</strong> and <strong>${remainingMonths} months</strong>.`;
+                        }
+                    }, 30);
+
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
+    });
+</script>
+
+<script>
+    window.onload = function () {
+        import('https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js').then(({neonCursor}) => {
+            neonCursor({
+                el: document.getElementById('background3D'),
+                shaderPoints: 10,
+                curvePoints: 80,
+                curveLerp: 0.5,
+                radius1: 5,
+                radius2: 30,
+                velocityTreshold: 10,
+                sleepRadiusX: 100,
+                sleepRadiusY: 100,
+                sleepTimeCoefX: 0.0025,
+                sleepTimeCoefY: 0.0025
+            });
+        });
+    };
+</script>
 
 </body>
 </html>
