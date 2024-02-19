@@ -10238,7 +10238,6 @@ h3 {
   top: 0;
   left: 0;
   transition: all 0.2s ease-in-out;
-  opacity: 0.1;
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
