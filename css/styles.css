@@ -483,6 +483,11 @@ mark,
   height: auto;
 }
 
+.img-cert {
+  width: 320px;
+  height: 250px;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
