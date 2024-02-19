@@ -10486,3 +10486,13 @@ canvas{
   top: 0;
   z-index: 10;
 }
+
+.glowing-text {
+  color: #fff;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.glowing-text:hover {
+  color: #17a2b8;
+  text-shadow: 0 0 10px #17a2b8, 0 0 20px #17a2b8, 0 0 30px #17a2b8;
+}
