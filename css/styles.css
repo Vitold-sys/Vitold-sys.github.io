@@ -10496,6 +10496,16 @@ canvas{
   text-shadow: 0 0 10px #17a2b8, 0 0 20px #17a2b8, 0 0 30px #17a2b8;
 }
 
+.glowing-text-back-button {
+  color: #fff;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.glowing-text-back-button:hover {
+  color: #c3042a;
+  text-shadow: 0 0 10px #a40117, 0 0 20px #d22c2c, 0 0 30px #e3143f;
+}
+
 .contact-me-btn {
   color: #e2dcdc;
   font-size: 1.5rem;
