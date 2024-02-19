@@ -10495,3 +10495,10 @@ canvas{
   color: #17a2b8;
   text-shadow: 0 0 10px #17a2b8, 0 0 20px #17a2b8, 0 0 30px #17a2b8;
 }
+
+.contact-me-btn {
+  color: #e2dcdc;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 700 !important;
+}
