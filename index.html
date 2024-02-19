@@ -1123,7 +1123,7 @@
             return (
                 rect.top >= 0 &&
                 rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + 220 &&
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
         }
@@ -1133,6 +1133,7 @@
         document.addEventListener('DOMContentLoaded', fadeIn);
     });
 </script>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
