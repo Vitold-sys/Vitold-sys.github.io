@@ -10216,6 +10216,14 @@ h3 {
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 500px) {
+  .masthead {
+    padding-top: calc(3rem + 104px);
+    padding-bottom: 6rem;
+  }
+}
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
