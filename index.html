@@ -80,7 +80,7 @@
         </div>
 
         <!-- About Section Content -->
-        <div class="row text">
+  <!--      <div class="row text">
             <div class="col-lg-16 ml-auto">
                 <p class="lead" id="experience-section">
                 <div id="loading-textexpertime" class="font-italic about-info">Calculation experience in progress:</div>
@@ -130,6 +130,98 @@
                     lifestyle (skiing, hiking, swimming, cycling, basketball, traveling)</p>
                 <p class="fade-in about-info" id="item15"><i class="fa-solid fa-plug text-info"></i> I am passionate
                     about cars and technologies</p>
+            </div>
+        </div>-->
+        <div class="row text">
+            <div class="col-lg-16 ml-auto">
+
+                <!-- Intro -->
+                <p class="lead about-info">
+                    Hi, I'm <span class="font-weight-bold">Vitold</span> - a backend-focused software engineer with strong experience
+                    in cloud platforms and system reliability.
+                    <br><br>
+                    I enjoy working on complex systems, understanding how they behave in production,
+                    and improving them so teams and businesses can rely on them with confidence.
+                </p>
+
+                <!-- Experience calculator -->
+                <div id="experience-section">
+                    <div id="loading-textexpertime" class="font-italic about-info">
+                        Calculating professional experience...
+                    </div>
+                    <div id="progress-bar-container">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <div id="resultexpertime" class="d-none">
+                        <p id="experience-text" class="font-italic about-info"></p>
+                    </div>
+                </div>
+
+                <!-- What I do -->
+                <p class="font-weight-bold mb-2 h2 mt-4">What I do</p>
+                <p class="about-info">
+                    I design and build backend systems, integrate them with cloud infrastructure,
+                    and take responsibility for how they perform in production.
+                    <br><br>
+                    This includes architecture decisions, performance and stress testing,
+                    monitoring, alerting, and participation in on-call and incident response.
+                </p>
+
+                <!-- Technical focus -->
+                <p class="font-weight-bold mb-2 h2 mt-4">Technical focus</p>
+
+                <p class="fade-in about-info">
+                    <strong><i class="fas fa-circle-notch fa-spin text-info"></i> Backend engineering:</strong>
+                    Java & Kotlin, Spring ecosystem, REST and GraphQL APIs, microservices.
+                </p>
+
+                <p class="fade-in about-info">
+                    <strong><i class="fas fa-circle-notch fa-spin text-info"></i> Cloud platforms:</strong>
+                    AWS, Azure, GCP - designing, deploying, and operating production systems.
+                </p>
+
+                <p class="fade-in about-info">
+                    <strong><i class="fas fa-circle-notch fa-spin text-info"></i> Reliability & DevOps:</strong>
+                    CI/CD pipelines, Docker, Kubernetes, messaging systems, monitoring,
+                    and incident management.
+                </p>
+
+                <p class="fade-in about-info">
+                    <strong><i class="fas fa-circle-notch fa-spin text-info"></i> Data:</strong>
+                    PostgreSQL, MySQL, MongoDB - schema design, migrations, performance tuning.
+                </p>
+
+                <!-- How I work -->
+                <p class="font-weight-bold mb-2 h2 mt-4">How I work</p>
+                <p class="about-info">
+                    I'm used to working in international Agile teams and collaborating closely with
+                    engineers, product managers, and stakeholders.
+                    <br><br>
+                    I value clear communication, ownership, and calm decision-making -
+                    especially when systems are under pressure.
+                </p>
+
+                <!-- Certifications -->
+                <p class="font-weight-bold mb-2 h2 mt-4">Certifications</p>
+                <p class="fade-in about-info">
+                    <i class="fas fa-award text-warning"></i> AWS Certified
+                </p>
+                <p class="fade-in about-info">
+                    <i class="fas fa-award text-warning"></i> Microsoft Certified - Career Essentials in Generative AI
+                </p>
+
+                <!-- Languages -->
+                <p class="font-weight-bold mb-2 h2 mt-4">Languages</p>
+                <p class="fade-in about-info"><i class="fa-solid fa-play text-info"></i> English - B2</p>
+                <p class="fade-in about-info"><i class="fa-solid fa-play text-info"></i> Polish - B2</p>
+                <p class="fade-in about-info"><i class="fa-solid fa-play text-info"></i> Russian - Native</p>
+
+                <!-- Human side -->
+                <p class="font-weight-bold mb-2 h2 mt-4">Outside of work</p>
+                <p class="fade-in about-info">
+                    I enjoy an active lifestyle - skiing, hiking, cycling, swimming, and traveling.
+                    I'm also passionate about cars and modern technologies.
+                </p>
             </div>
         </div>
     </div>
@@ -1833,7 +1925,7 @@
 
                             document.getElementById("experience-text").innerHTML = `<strong>${years} +</strong> years of professional experience.`;
                         }
-                    }, 30);
+                    }, 10);
 
                     observer.unobserve(entry.target);
                 }
