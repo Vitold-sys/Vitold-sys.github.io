@@ -10518,3 +10518,70 @@ canvas{
   font-style: italic;
   font-weight: 700 !important;
 }
+
+.cv-scroll-hint {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+
+  color: #00ffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+
+  z-index: 9999;
+  pointer-events: none;
+
+  animation: neonGlow 1s ease-in-out infinite alternate;
+}
+
+.cv-scroll-hint span {
+  display: block;
+}
+
+.cv-scroll-hint span {
+  display: block;
+  line-height: 1.5em;
+}
+
+.cv-scroll-hint span.space {
+  height: 0.9em;
+}
+
+
+/* Neon animation */
+@keyframes neonGlow {
+  0% {
+    text-shadow:
+            0 0 5px #00eaff,
+            0 0 10px #00eaff,
+            0 0 20px #00eaff;
+  }
+  50% {
+    text-shadow:
+            0 0 5px #a855f7,
+            0 0 10px #a855f7,
+            0 0 20px #a855f7;
+  }
+  100% {
+    text-shadow:
+            0 0 5px #22c55e,
+            0 0 10px #22c55e,
+            0 0 20px #22c55e;
+  }
+}
+
+@media (max-width: 768px) {
+  .cv-scroll-hint {
+    display: none;
+  }
+}
