@@ -10537,8 +10537,7 @@ canvas{
   color: #00ffff;
   padding: 8px 12px;
   border-radius: 8px;
-
-  z-index: 9999;
+  
   pointer-events: none;
 
   animation: neonGlow 1s ease-in-out infinite alternate;
