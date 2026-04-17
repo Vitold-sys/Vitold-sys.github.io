@@ -10584,3 +10584,8 @@ canvas{
     display: none;
   }
 }
+
+.sep {
+  margin: 0 10px;
+  opacity: 0.6;
+}
